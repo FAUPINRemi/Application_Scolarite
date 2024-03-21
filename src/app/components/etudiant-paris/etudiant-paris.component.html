@@ -1,0 +1,31 @@
+<h1 class="flex justify-center items-center font-bold"> Étudiant Paris</h1>
+<div class="overflow-x-auto w-3/4 mx-auto">
+    <table class="w-full whitespace-nowrap">
+        <thead>
+        <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b bg-gray-50">
+          <th class="px-4 py-3">Nom</th>
+          <th class="px-4 py-3">Prénom</th>
+          <th class="px-4 py-3">Rue</th>
+          <th class="px-4 py-3">Code Postal</th>
+          <th class="px-4 py-3">Ville</th>
+          <th class="px-4 py-3">Email</th>
+          <th class="px-4 py-3">Sexe</th>
+          <th class="px-4 py-3">Age</th>
+          <th class="px-4 py-3">ID</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white divide-y">
+        <tr *ngFor="let etudiant of etudiantsParis" class="text-gray-700">
+          <td class="px-4 py-3">{{etudiant._nom}}</td>
+          <td class="px-4 py-3">{{etudiant._prenom}}</td>
+          <td class="px-4 py-3">{{etudiant._rue}}</td>
+          <td class="px-4 py-3">{{etudiant._cp}}</td>
+          <td class="px-4 py-3">{{etudiant._ville}}</td>
+          <td class="px-4 py-3">{{etudiant._courriel}}</td>
+          <td class="px-4 py-3">{{etudiant._genre}}</td>
+          <td class="px-4 py-3">{{etudiant._age}}</td>
+          <td class="px-4 py-3">{{etudiant._idCand}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
